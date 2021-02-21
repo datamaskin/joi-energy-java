@@ -59,7 +59,7 @@ fabric.properties
 # *.iml
 # modules.xml
 # .idea/misc.xml
-# *.ipr
+*.ipr
 
 # Sonarlint plugin
 .idea/sonarlint
@@ -138,4 +138,4 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
-# End of https://www.gitignore.io/api/osx,macos,gradle,windows,intellij
+# End of https://www.gitignore.io/api/osx,macos,gradle,windows,intellijtw-energy.ipr
