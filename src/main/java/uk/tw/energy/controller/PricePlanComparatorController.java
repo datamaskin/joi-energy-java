@@ -50,6 +50,16 @@ public class PricePlanComparatorController {
                 : ResponseEntity.notFound().build();
     }
 
+    @GetMapping("/single/{smartMeterId}")
+    public ResponseEntity<BigDecimal> calculatedCostForSinglePricePlan(@PathVariable String smartMeterId) {
+        String pricePlanId = accountService.getPricePlanIdForSmartMeterId(smartMeterId);
+
+        BigDecimal averageForSinglePricePlans =
+                pricePlanService.getConsumptionCostOfElectricityReadingsForSinglePlan(smartMeterId, pricePlanId);
+
+        return ResponseEntity.ok(averageForSinglePricePlans);
+    }
+
     @GetMapping("/recommend/{smartMeterId}")
     public ResponseEntity<List<Map.Entry<String, BigDecimal>>> recommendCheapestPricePlans(@PathVariable String smartMeterId,
                                                                                            @RequestParam(value = "limit", required = false) Integer limit) {
