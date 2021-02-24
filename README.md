@@ -1,3 +1,8 @@
+# An online test coding pair with a TW employee.
+- The second TW test in about 10 years that did not make the cut.
+- The first test was the Marsrover application on my github repo: https://github.com/datamaskin
+- _The interviewer felt that there was still some learning and growth around some of the best practices we champion on our engineering teams such as: refactoring, navigating around a complicated code base, and working with functions._
+
 # Welcome to PowerDale
 
 PowerDale is a small town with around 100 residents. Most houses have a smart meter installed that can save and send information about how much power a house is drawing/using.
